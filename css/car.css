@@ -1,0 +1,187 @@
+/** hero-section start*/
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: url(/images/car/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000027;
+  z-index: 1;
+}
+
+.hero-section .content {
+  width: 80%;
+  height: 100%;
+  padding: 9rem 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.search-flight-box {
+  width: 900px;
+  max-width: 90%;
+  min-height: 235px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 6rem;
+  margin-left: -1.5rem;
+  box-shadow: 1px 2px 7px 0 #0000001f;
+}
+
+.search-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0;
+}
+
+.search-inputs input {
+  padding: 17px 10px;
+  background: #e2e1e160;
+  color: #000;
+  border: 1px solid #e2e2e2;
+  outline: none;
+  border-radius: 10px;
+  font-family: FontAwesome;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin: 5px;
+}
+
+.search-inputs input:focus {
+  background: #fff;
+}
+
+.search-inputs input::placeholder {
+  font-size: 0.7rem;
+  color: #0000005b;
+}
+
+.search-flight-box button {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+}
+
+.search-flight-box button i {
+  margin-left: 10px;
+}
+
+/** hero-section end*/
+/** top-cars start*/
+.top-cars {
+  padding: 5rem 0;
+}
+
+.top-cars h2 {
+  font-size: var(--heading-font-size);
+  font-weight: 600;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.top-cars .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.img-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.img-box img:hover {
+  transform: scale(1.1);
+}
+
+.card .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.card .card-content h4 {
+  font-size: 1.1rem;
+  padding: 5px 0;
+}
+
+.card .card-content span {
+  color: #918d8d;
+  font-size: 0.9rem;
+}
+
+.top-cars > button {
+  display: block;
+  margin: 5rem auto 0;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+
+/** top-cars end*/
+/** features start*/
+.features {
+  padding: 6rem 0;
+  background: #fff;
+}
+
+.features h3 {
+  font-size: 1.5rem;
+  margin: 0 0 3.5rem 5rem;
+}
+
+.features .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.features .box {
+  width: 280px;
+  min-height: 165px;
+  position: relative;
+  border: 2px solid var(--secondry-color);
+  padding: 3rem 5rem;
+  border-radius: 10px;
+}
+
+.features .box img {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #e2eef8;
+  border-radius: 50%;
+}
+
+.features .box h4 {
+  font-size: 1.1rem;
+  max-width: 160px;
+  text-align: center;
+}
+
+/** features end*/

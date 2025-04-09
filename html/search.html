@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="icon" href="../images/logo_icon.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/search.css">
+<script defer src="../js/main.js"></script>
+<script defer src="../js/search.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo image"></a>
+                <ul>
+                    <li><a href="hotel.html"><i class="fa-solid fa-hotel"></i> hotel</a></li>
+                    <li><a href="flight.html"><i class="fa-solid fa-plane fa-rotate-270"></i> flight</a></li>
+                    <li><a href="#"><i class="fa-solid fa-earth-americas"></i> tour</a></li>
+                    <li><a href="car.html"><i class="fa-solid fa-car"></i> car</a></li>
+                </ul>
+                <a class="signbtns" href="sign.html">
+                    <div>
+                        <button class="btn">log in /</button>
+                        <button class="btn">sign up</button>
+                    </div>
+                </a>
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="sidebar-nav">
+                <ul>
+                    <li><a href="hotel.html"><i class="fa-solid fa-hotel"></i> hotel</a></li>
+                    <li><a href="flight.html"><i class="fa-solid fa-plane fa-rotate-270"></i> flight</a></li>
+                    <li><a href="#"><i class="fa-solid fa-earth-americas"></i> tour</a></li>
+                    <li><a href="car.html"><i class="fa-solid fa-car"></i> car</a></li>
+                </ul>
+                <a class="signbtns" href="sign.html">
+                    <div>
+                        <button class="btn">log in /</button>
+                        <button class="btn">sign up</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main id="hero">
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search">
+             <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="container">
+            <section class="filter">
+                <h2>Filter</h2>
+                <div class="options-box">
+                    <div class="box-title">
+                        <h3>destinations </h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="cairo" id="cairo">
+                        <label for="cairo">cairo</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="canada" id="canada">
+                        <label for="canada">canada</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="emirates" id="emirates">
+                        <label for="emirates">emirates</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="europe" id="europe">
+                        <label for="europe">europe</label>
+                    </div>
+                </div>
+                <div class="options-box">
+                    <div class="box-title">
+                        <h3>duration </h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="range-slider">
+                        <input type="range" class="slider" value="10" min="0" max="30">
+                        <div class="slider-thumb">
+                            <div class="tooltip"></div>
+                        </div>
+                        <div class="progress"></div>
+                    </div>
+                    <div class="days-range">
+                        <span>0 Day</span>
+                        <span>30 Day</span>
+                    </div>
+                </div>
+                <div class="options-box">
+                    <div class="box-title">
+                        <h3>trip types</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="luxury" id="luxury">
+                        <label for="luxury">luxury</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="premium" id="premium">
+                        <label for="premium">premium</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="standard" id="standard">
+                        <label for="standard">standard</label>
+                    </div>
+                </div>
+                <div class="options-box">
+                    <div class="box-title">
+                        <h3>price </h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="range-slider">
+                        <input type="range" class="slider" value="1000" min="500" max="10000" step="50">
+                        <div class="slider-thumb">
+                            <div class="tooltip"></div>
+                        </div>
+                        <div class="progress"></div>
+                    </div>
+                    <div class="days-range">
+                        <span>$500</span>
+                        <span>$10000</span>
+                    </div>
+                </div>
+            </section>
+            <section class="results">
+                <div class="rooms-cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/hotel/rooms/1.jpg" alt="room image">
+                        </div>
+                        <div class="title">
+                            <h3>single room</h3>
+                            <h5><i class="fa-solid fa-hotel"></i> 123 kathal st. tampa city</h5>
+                        </div>
+                        <div class="room-features">
+                            <h5><i class="fa-solid fa-hotel"></i> 4 bed</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> parking</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> breakfast</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> AC</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> free wiFi</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> laundry</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/hotel/rooms/2.jpg" alt="room image">
+                        </div>
+                        <div class="title">
+                            <h3>luxury room</h3>
+                            <h5>123 kathal st. tampa city</h5>
+                        </div>
+                        <div class="room-features">
+                            <h5><i class="fa-solid fa-hotel"></i> 4 bed</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> parking</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> breakfast</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> AC</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> free wiFi</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> laundry</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/hotel/rooms/3.jpg" alt="room image">
+                        </div>
+                        <div class="title">
+                            <h3>double room</h3>
+                            <h5>123 kathal st. tampa city</h5>
+                        </div>
+                        <div class="room-features">
+                            <h5><i class="fa-solid fa-hotel"></i> 4 bed</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> parking</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> breakfast</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> AC</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> free wiFi</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> laundry</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/hotel/rooms/4.jpg" alt="room image">
+                        </div>
+                        <div class="title">
+                            <h3>double room</h3>
+                            <h5>123 kathal st. tampa city</h5>
+                        </div>
+                        <div class="room-features">
+                            <h5><i class="fa-solid fa-hotel"></i> 4 bed</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> parking</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> breakfast</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> AC</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> free wiFi</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> laundry</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/hotel/rooms/5.jpg" alt="room image">
+                        </div>
+                        <div class="title">
+                            <h3>luxury room</h3>
+                            <h5>123 kathal st. tampa city</h5>
+                        </div>
+                        <div class="room-features">
+                            <h5><i class="fa-solid fa-hotel"></i> 4 bed</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> parking</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> breakfast</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> AC</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> free wiFi</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> laundry</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/hotel/rooms/6.jpg" alt="room image">
+                        </div>
+                        <div class="title">
+                            <h3>single room</h3>
+                            <h5>123 kathal st. tampa city</h5>
+                        </div>
+                        <div class="room-features">
+                            <h5><i class="fa-solid fa-hotel"></i> 4 bed</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> parking</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> breakfast</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> AC</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> free wiFi</h5>
+                            <h5><i class="fa-solid fa-hotel"></i> laundry</h5>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="top-footer">
+            <h5>quick links:</h5>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-circle-check"></i> about us</a></li>
+                <li><a href="flight.html"><i class="fa-solid fa-circle-check"></i> flight</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-check"></i> faq</a></li>
+                <li><a href="tel:+666 888 0000"><i class="fa-solid fa-circle-check"></i> 666 888 0000</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-check"></i> contact us</a></li>
+                <li><a href="hotel.html"><i class="fa-solid fa-circle-check"></i> hotels</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-check"></i> terms & use</a></li>
+                <li><a href="mailto:needhelp@gmail.com"><i class="fa-solid fa-circle-check"></i>
+                        mailto:needhelp@gmail.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-check"></i> our history</a></li>
+                <li><a href="car.html"><i class="fa-solid fa-circle-check"></i> car</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-check"></i> our awards</a></li>
+            </ul>
+            <div class="footer-imgs">
+                <img src="../images/flight/top destinations/2.jpg" alt="image">
+                <img src="../images/flight/top destinations/9.jpg" alt="image">
+                <img src="../images/flight/top destinations/5.jpg" alt="image">
+                <img src="../images/flight/top destinations/6.jpg" alt="image">
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <span>made by Ahmed Ragab &copy; 2025.</span>
+        </div>
+    </footer>
+    <a class="scroll-up" href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
+</body>
+</html>

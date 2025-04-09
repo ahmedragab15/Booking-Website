@@ -1,0 +1,251 @@
+/** hero-section start*/
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: url(/images/hotel/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.hero-section .content {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.search-flight-box {
+  width: 90%;
+  min-height: 130px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 35px 50px;
+  text-align: center;
+  box-shadow: 1px 2px 7px 0 #0000001f;
+}
+
+.search-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-inputs input {
+  flex: 1;
+  padding: 17px 10px;
+  background: #e2e1e160;
+  color: #000;
+  border: 1px solid #e2e2e2;
+  outline: none;
+  border-radius: 10px;
+  font-family: FontAwesome;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin: 0 5px;
+}
+
+.search-inputs input:focus {
+  background: #fff;
+}
+
+.search-inputs input::placeholder {
+  font-size: 0.7rem;
+  color: #0000005b;
+}
+
+.search-flight-box button {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+.search-flight-box button i {
+  margin-left: 10px;
+}
+/** hero-section end*/
+/**partners-section start*/
+
+.partners-section {
+  padding: 3rem 0;
+  background: #fff;
+}
+.partners-section h2 {
+  margin-bottom: 10px;
+}
+
+.partners-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.partners-section .row .col {
+  flex: 1;
+}
+.partners-section .row img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+  display: block;
+  margin: auto;
+}
+/**partners-section end*/
+
+/** rooms-section start*/
+.rooms-section {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  background: #fff;
+}
+
+.rooms-section .container {
+  max-width: 1700px;
+}
+
+.rooms-section h2 {
+  font-size: var(--heading-font-size);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.rooms-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 80px;
+}
+.rooms-cards .card {
+  /* min-height: 530px; */
+  cursor: pointer;
+  box-shadow: 1px 2px 7px 0 #0000001f;
+  border-radius: 10px;
+}
+.rooms-section .card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.rooms-section .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: 0.4s;
+}
+
+.rooms-section .card img:hover {
+  transform: scale(1.1);
+}
+
+.rooms-cards .title {
+  padding: 0.9rem;
+}
+
+.rooms-cards .title h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.rooms-cards h5 {
+  font-size: 0.9rem;
+  color: #808080d0;
+  font-weight: 400;
+}
+.rooms-cards .room-features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.8rem 0 0;
+}
+.rooms-cards .room-features h5 {
+  display: inline-block;
+  width: 33%;
+  padding: 1rem;
+}
+
+.rooms-section button {
+  display: block;
+  margin: 5rem auto 0;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+
+/** rooms-section end*/
+/** benefits-section end*/
+.benefits-section {
+  display: flex;
+  gap: 4rem;
+  padding: 5rem 1rem;
+  background: #fff;
+  position: relative;
+}
+.benefits-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f3f1ed;
+  height: 100%;
+  width: 80%;
+  z-index: 1;
+}
+.benefits-section > * {
+  z-index: 2;
+}
+
+.benefits-section .left {
+  width: 50%;
+}
+.benefits-section .left .img-box {
+  position: relative;
+}
+.benefits-section .left img:first-child {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.benefits-section .left img:last-child {
+  position: absolute;
+  right: -40px;
+  bottom: -50px;
+  padding: 1.4rem;
+  background: #fff;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 1px 2px 7px 0 #0000001f;
+}
+.benefits-section .right span {
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+.benefits-section .right h2 {
+  font-size: 4rem;
+}
+.benefits-section .right .features {
+  padding: 2rem 0.5rem;
+}
+.benefits-section .right .features .feat {
+  display: flex;
+  gap: 1.3rem;
+  margin: 2rem 0;
+}
+.benefits-section .right .features .feat i {
+  color: var(--main-color);
+  font-size: 1.6rem;
+}
+.benefits-section .right .features .feat-description h4 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+.benefits-section .right .features .feat-description p {
+  max-width: 700px;
+}
+/** benefits-section end*/

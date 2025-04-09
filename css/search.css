@@ -1,0 +1,228 @@
+main {
+    margin: 13rem 0;
+}
+
+main .search-box {
+    position: relative;
+    width: 500px;
+    max-width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+main .search-box .search-input {
+    font-size: 1rem;
+    border: 1px solid #c9c7c7a2;
+    outline: none;
+    padding: 0.8rem 2rem 0.8rem 1em;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5rem;
+}
+
+.filter h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.filter .options-box {
+    background: #d4d4d4a4;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.filter .options-box .box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d4d4d4a4;
+}
+
+.filter .options-box h3 {
+    font-size: 1.5rem;
+}
+
+.filter .options-box .option {
+    padding: 1rem 0;
+    border-top: 1px solid #d4d4d4a4;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--main-color);
+}
+
+.range-slider {
+    position: relative;
+    display: flex;
+    margin: 4rem 0 2rem;
+}
+
+.slider {
+    width: 100%;
+    height: 0.5rem;
+    outline: none;
+    border-radius: 3px;
+    appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    cursor: pointer;
+    width: 1.7rem;
+    height: 1.7rem;
+    z-index: 10;
+    position: relative;
+    appearance: none;
+}
+
+.slider-thumb {
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.slider-thumb::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.7rem;
+    height: 0.7rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.range-slider .tooltip {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.8rem;
+    height: 2rem;
+    background: var(--main-color);
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.range-slider .tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid var(--main-color);
+}
+
+.range-slider .progress {
+    width: 50%;
+    height: 0.4rem;
+    border-radius: 3px;
+    background: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.days-range {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.results .rooms-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 6rem;
+}
+
+
+.rooms-cards .card {
+    min-height: 530px;
+    cursor: pointer;
+    box-shadow: 1px 2px 7px 0 #0000001f;
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: 0.4s;
+
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.rooms-cards .title {
+    padding: 0.9rem;
+}
+
+.rooms-cards .title h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.rooms-cards h5 {
+    font-size: 0.9rem;
+    color: #808080d0;
+    font-weight: 400;
+}
+
+.rooms-cards .room-features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.8rem 0 0;
+}
+
+.rooms-cards .room-features h5 {
+    display: inline-block;
+    width: 33%;
+    padding: 1rem;
+}

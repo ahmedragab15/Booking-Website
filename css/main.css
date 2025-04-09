@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-font: "Roboto", serif;
+
+  --main-color: #5f51e0;
+  --light-main-color: #dec5f352;
+  --text-color: #3c3c3e;
+  --bg-color: #faf9f6;
+  --btn-hover-color: #4531fd;
+
+  --secondry-color: #1b91eb;
+  --btn-hover-secondry-color: #0078d4;
+
+  --heading-font-size: 3rem;
+  --span-font-size: 1.5rem;
+  --p-font-size: 1rem;
+
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--light-main-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+}
+
+::selection {
+  color: var(--main-color);
+  background-color: var(--light-main-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--main-font);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 12px 15px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.secondry-btn {
+  padding: 12px 15px;
+  background: var(--secondry-color);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background-color: var(--btn-hover-color);
+}
+
+.secondry-btn:hover {
+  background-color: var(--btn-hover-secondry-color);
+}
+
+.sec-font {
+  font-family: "Playwrite AU SA", serif;
+  font-weight: 600;
+  word-spacing: -2px;
+  padding-left: 10px;
+}
+
+/** header start */
+header {
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 5px 0 #0000000a;
+}
+
+.container {
+  width: 98%;
+  margin: auto;
+  height: 100%;
+  padding: 0 2%;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 140px;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li a {
+  color: var(--text-color);
+  padding: 0 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+nav li a:hover {
+  color: var(--main-color);
+}
+
+.signbtns {
+  background: var(--light-main-color);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.signbtns button:hover {
+  color: var(--text-color);
+}
+
+.signbtns button {
+  color: var(--main-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/** header end */
+/** footer start*/
+/** top-footer start*/
+.top-footer {
+  padding: 2rem 1rem;
+  background: url(/images/footer-bg.png) no-repeat center;
+}
+
+.top-footer h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.top-footer ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.top-footer ul li {
+  padding: 40px;
+}
+
+.top-footer ul li a {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.top-footer ul li a:hover {
+  color: var(--main-color);
+}
+
+.top-footer ul li a i {
+  color: var(--main-color);
+  font-size: 0.9rem;
+}
+
+.top-footer .footer-imgs {
+  text-align: center;
+}
+
+.top-footer .footer-imgs img {
+  width: 180px;
+  margin: 50px 10px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.top-footer .footer-imgs img:hover {
+  transform: scale(1.04);
+}
+
+/** top-footer end*/
+/** bottom-footer start*/
+.bottom-footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/** bottom-footer end*/
+/** footer end*/
+
+/* scroll up */
+.scroll-up {
+  position: fixed;
+  bottom: -100px;
+  right: -100px;
+  z-index: 1550;
+  color: white;
+  background-color: var(--main-color);
+  font-size: 20px;
+  padding: 8px 13px;
+  border-radius: 10px;
+  border: 2px solid var(--main-color);
+  transition: 0.5s;
+  animation: float 2s infinite alternate;
+}
+@keyframes float {
+  to {
+    transform: translateY(10px);
+  }
+}
+.scroll-up:hover {
+  background: white;
+  color: var(--main-color);
+}
+.scroll-up.show {
+  bottom: 30px;
+  right: 30px;
+}
+
+/* ham menu */
+.ham-menu {
+  height: 50px;
+  width: 40px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+  z-index: 1111;
+}
+
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background: var(--main-color);
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.ham-menu.active span {
+  background: #fff;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*sidebar-nav*/
+.sidebar-nav {
+  background: var(--main-color);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 20px 0 0 20px;
+  height: 100vh;
+  width: 60%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.5s ease;
+  z-index: 1000;
+}
+
+.sidebar-nav li {
+  padding: 20px;
+}
+
+.sidebar-nav li a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.sidebar-nav li a:hover {
+  background: var(--light-main-color);
+}
+
+.sidebar-nav.active {
+  right: 0;
+}
+
+.sidebar-nav .signbtns {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* start responsive */
+
+/* labtops*/
+@media (max-width: 1200px) {
+}
+
+/* tablets*/
+@media (max-width: 992px) {
+  .ham-menu {
+    display: flex;
+  }
+
+  nav ul,
+  nav .signbtns {
+    display: none;
+  }
+}
+
+/*big phones*/
+@media (max-width: 768px) {
+}
+
+/* phones*/
+@media (max-width: 576px) {
+}
+
+/* end responsive */

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --active-color: #40a9dd;
+    --success-color: #53ddb4;
+    --error-color: #d43a4c;
+}
+
+/**/
+
+main .container {
+    height: 100vh;
+    margin: 0 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.container h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.form {
+    width: 100%;
+    max-width: 340px;
+}
+
+.form-field {
+    position: relative;
+    margin: 40px 0;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #cac9c9;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    transition: 0.4s all;
+    background: transparent;
+}
+
+input::placeholder {
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.form-label {
+    position: absolute;
+    left: 1.2rem;
+    top: -0.65rem;
+    background: var(--bg-color);
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.error {
+    position: absolute;
+    left: 0.5rem;
+    bottom: -1.3rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    color: var(--error-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s all;
+}
+
+.error i {
+    font-size: 0.9rem;
+}
+
+.error span {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+input:focus {
+    border-color: var(--active-color);
+    box-shadow: 0 8px 24px #269dd94d;
+}
+
+main button {
+    width: 100%;
+}
+
+.valid input {
+    border-color: var(--success-color);
+    box-shadow: 0 4px 10px #38af89;
+}
+
+.invalid input {
+    border-color: var(--error-color);
+    box-shadow: 0 8px 24px #d43a4c4d;
+}
+
+.invalid .error {
+    opacity: 1;
+}

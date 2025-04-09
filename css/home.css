@@ -2,7 +2,7 @@
 .hero-section {
   width: 100%;
   min-height: 110dvh;
-  background: url(/images/home/hero.png) no-repeat right center;
+  background: url(images/home/hero.png) no-repeat right center;
   background-size: min(1000px, 100%);
   position: relative;
 }
@@ -349,7 +349,7 @@
 
 .slideshow-imgs {
   height: 760px;
-  background: url(/images/home/slideshow/pv1.png) no-repeat center;
+  background: url(images/home/slideshow/pv1.png) no-repeat center;
   background-size: cover;
   animation: slideshow 8s infinite;
 }
@@ -357,33 +357,33 @@
 @keyframes slideshow {
   0%,
   15% {
-    background: url(/images/home/slideshow/pv1.png) no-repeat center;
+    background: url(images/home/slideshow/pv1.png) no-repeat center;
   }
 
   25%,
   40% {
-    background: url(/images/home/slideshow/pv2.png) no-repeat center;
+    background: url(images/home/slideshow/pv2.png) no-repeat center;
   }
 
   50%,
   65% {
-    background: url(/images/home/slideshow/pv3.png) no-repeat center;
+    background: url(images/home/slideshow/pv3.png) no-repeat center;
   }
 
   75%,
   90% {
-    background: url(/images/home/slideshow/pv4.png) no-repeat center;
+    background: url(images/home/slideshow/pv4.png) no-repeat center;
   }
 
   100% {
-    background: url(/images/home/slideshow/pv1.png) no-repeat center;
+    background: url(images/home/slideshow/pv1.png) no-repeat center;
   }
 }
 
 /** slideshow-section end*/
 /** packages-section start*/
 .packages-section {
-  background: url(/images/home/packages/price-bg.png) no-repeat top;
+  background: url(images/home/packages/price-bg.png) no-repeat top;
   background-size: 100% 700px;
   padding-bottom: 7rem;
   padding-top: 3rem;

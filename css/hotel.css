@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background: url(/images/hotel/hero.jpg) no-repeat center;
+  background: url(../images/hotel/hero.jpg) no-repeat center;
   background-size: cover;
 }
 

@@ -6,11 +6,9 @@
     --error-color: #d43a4c;
 }
 
-/**/
-
 main .container {
+    max-width: 90%;
     height: 100vh;
-    margin: 0 1.5rem;
     display: grid;
     place-items: center;
 }
@@ -104,4 +102,21 @@ main button {
 
 .invalid .error {
     opacity: 1;
+}
+
+@media  (max-width: 768px) {
+    input {
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+.form-label {
+    font-size: 0.6rem;
+}
+.error i {
+    font-size: 0.7rem;
+}
+.error span {
+    font-size: 0.6rem;
+}
 }

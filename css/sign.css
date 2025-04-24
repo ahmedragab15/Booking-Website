@@ -1,5 +1,5 @@
 section {
-    margin-top: 15rem;
+    margin: 15rem 0 5rem;
     width: 100%;
     background-color: var(--bg-color);
     display: flex;
@@ -14,9 +14,9 @@ section .container {
     box-shadow: 0 5px 15px rgba(119, 118, 118, 0.281);
     position: relative;
     overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+    width: 800px;
+    max-width: 90%;
+    min-height: 580px;
 }
 
 section .container p {
@@ -38,7 +38,7 @@ section .container a {
 }
 
 section .container button {
-    background: var(--secondry-color);
+    background: var(--main-color);
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -52,7 +52,7 @@ section .container button {
 }
 
 section .container button:hover{
-    background: var(--btn-hover-secondry-color);
+    background: var(--btn-hover-color);
 }
 
 section .container button.hidden {
@@ -61,7 +61,7 @@ section .container button.hidden {
 }
 section .container button.hidden:hover{
     background: #fff;
-    color: var(--secondry-color);
+    color: var(--main-color);
 }
 
 section .container form {
@@ -133,7 +133,7 @@ section .container.active .sign-up {
 
 
 .social-icons a {
-    border: 1px solid var(--secondry-color);
+    border: 1px solid var(--main-color);
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -160,7 +160,7 @@ section .container.active .sign-up {
 }
 .social-icons a:hover{
     color: #fff;
-    background-color: var(--secondry-color);
+    background-color: var(--main-color);
 }
 
 .toggle-container {
@@ -181,7 +181,7 @@ section .container.active .toggle-container {
 }
 
 .toggle {
-    background: var(--secondry-color);
+    background: var(--main-color);
     height: 100%;
     color: #fff;
     position: relative;

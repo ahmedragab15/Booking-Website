@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Frequently Asked Questions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../images/logo_icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/sign.css" />
-    <script defer src="../js/sign.js"></script>
+    <link rel="stylesheet" href="../css/faq.css" />
     <script defer src="../js/main.js"></script>
   </head>
   <body>
@@ -66,54 +65,59 @@
         </div>
       </div>
     </header>
-    <section>
-      <div class="container" id="container">
-        <div class="form-container sign-up">
-          <form>
-            <h1>Create Account</h1>
-            <input type="text" placeholder="Username" />
-            <input type="email" placeholder="E-mail" />
-            <input type="password" placeholder="Password" />
-            <button>Sign Up</button>
-            <p>or sign up with</p>
-            <div class="social-icons">
-              <a href="#" class="icons"><i class="fa-brands fa-google"></i></a>
-              <a href="#" class="icons"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#" class="icons"><i class="fa-brands fa-github"></i></a>
-              <a href="#" class="icons"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-          </form>
-        </div>
 
-        <div class="form-container sign-in">
-          <form>
-            <h1>Sign In</h1>
-            <input type="email" placeholder="E-mail" />
-            <input type="password" placeholder="Password" />
-            <a href="reset-password.html">Forget Password?</a>
-            <button>Sign In</button>
-            <p>or sign in with</p>
-            <div class="social-icons">
-              <a href="#" class="icons"><i class="fa-brands fa-google"></i></a>
-              <a href="#" class="icons"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#" class="icons"><i class="fa-brands fa-github"></i></a>
-              <a href="#" class="icons"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-          </form>
-        </div>
+    <section class="hero">
+      <div class="content">
+        <h2>Frequently Asked Questions</h2>
 
-        <div class="toggle-container">
-          <div class="toggle">
-            <div class="toggle-panel toggle-left">
-              <h1>Welcome To <br />Booking</h1>
-              <p>Sign in With Email & Passowrd</p>
-              <button class="hidden" id="login">Sign In</button>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I book an experience?</span>
+              <i class="fas fa-chevron-down"></i>
             </div>
+            <div class="faq-answer">
+              <p>Booking is simple! Just browse our experiences, select your desired date and options, and proceed to checkout. You'll receive a confirmation email with all the details.</p>
+            </div>
+          </div>
 
-            <div class="toggle-panel toggle-right">
-              <h1>Welcome Back</h1>
-              <p>No account yet? Sign up</p>
-              <button class="hidden" id="register">Sign Up</button>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is your cancellation policy?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Most experiences can be cancelled for free up to 24 hours before the scheduled time. Some special experiences may have different policies which will be clearly stated during booking.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you offer group discounts?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes! For groups of 6 or more, we offer special discounted rates. Contact our customer service team for more information and to arrange your group booking.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I contact customer support?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Our customer support team is available 24/7 via email at needhelp@gmail.com or by phone at 666 888 0000. You can also use the chat feature in our app.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What payment methods do you accept?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay. Some regional payment methods may also be available.</p>
             </div>
           </div>
         </div>
@@ -159,16 +163,33 @@
           </li>
         </ul>
         <div class="footer-imgs">
-          <img loading="lazy" src="../images/flight/top destinations/2.jpg" alt="image" />
-          <img loading="lazy" src="../images/flight/top destinations/7.jpg" alt="image" />
-          <img loading="lazy" src="../images/flight/top destinations/6.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/5.jpg" alt="image" />
           <img loading="lazy" src="../images/flight/top destinations/8.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/2.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/1.jpg" alt="image" />
         </div>
       </div>
       <div class="bottom-footer">
         <span>made by Ahmed Ragab &copy; 2025.</span>
       </div>
     </footer>
-    <a class="scroll-up" href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script>
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          answer.classList.toggle("active");
+
+          const icon = question.querySelector("i");
+          if (answer.classList.contains("active")) {
+            icon.classList.remove("fa-chevron-down");
+            icon.classList.add("fa-chevron-up");
+          } else {
+            icon.classList.remove("fa-chevron-up");
+            icon.classList.add("fa-chevron-down");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

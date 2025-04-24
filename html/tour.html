@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../images/logo_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/tour.css" />
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="../index.html"><img loading="lazy" class="logo" src="../images/logo.png" alt="logo image" /></a>
+          <ul>
+            <li>
+              <a href="hotel.html"><i class="fa-solid fa-hotel"></i> hotel</a>
+            </li>
+            <li>
+              <a href="flight.html"><i class="fa-solid fa-plane fa-rotate-270"></i> flight</a>
+            </li>
+            <li>
+              <a href="tour.html"><i class="fa-solid fa-earth-americas"></i> tour</a>
+            </li>
+            <li>
+              <a href="car.html"><i class="fa-solid fa-car"></i> car</a>
+            </li>
+          </ul>
+          <a class="signbtns" href="sign.html">
+            <div>
+              <button class="btn">log in /</button>
+              <button class="btn">sign up</button>
+            </div>
+          </a>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+        <div class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="hotel.html"><i class="fa-solid fa-hotel"></i> hotel</a>
+            </li>
+            <li>
+              <a href="flight.html"><i class="fa-solid fa-plane fa-rotate-270"></i> flight</a>
+            </li>
+            <li>
+              <a href="tour.html"><i class="fa-solid fa-earth-americas"></i> tour</a>
+            </li>
+            <li>
+              <a href="car.html"><i class="fa-solid fa-car"></i> car</a>
+            </li>
+          </ul>
+          <a class="signbtns" href="sign.html">
+            <div>
+              <button class="btn">log in /</button>
+              <button class="btn">sign up</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero tour-selection">
+        <div class="container">
+          <div class="content">
+            <h2>Select Your Perfect Tour</h2>
+            <p>Choose from our curated collection of unforgettable experiences</p>
+
+            <div class="tour-grid">
+              <div class="tour-card">
+                <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                  <span class="tour-price">From $199</span>
+                </div>
+                <div class="tour-info">
+                  <h3>Paris City Lights</h3>
+                  <p class="tour-duration"><i class="fas fa-clock"></i> 3 days</p>
+                  <p class="tour-description">Experience the romance of Paris with our guided tour of iconic landmarks.</p>
+                  <button class="btn primary-btn" data-tour="paris">Select Tour</button>
+                </div>
+              </div>
+
+              <div class="tour-card">
+                <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                  <span class="tour-price">From $349</span>
+                </div>
+                <div class="tour-info">
+                  <h3>Amazon Adventure</h3>
+                  <p class="tour-duration"><i class="fas fa-clock"></i> 7 days</p>
+                  <p class="tour-description">Explore the wonders of the Amazon rainforest with expert guides.</p>
+                  <button class="btn primary-btn" data-tour="amazon">Select Tour</button>
+                </div>
+              </div>
+
+              <div class="tour-card">
+                <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                  <span class="tour-price">From $499</span>
+                </div>
+                <div class="tour-info">
+                  <h3>Japanese Cultural Journey</h3>
+                  <p class="tour-duration"><i class="fas fa-clock"></i> 10 days</p>
+                  <p class="tour-description">Immerse yourself in traditional and modern Japanese culture.</p>
+                  <button class="btn primary-btn" data-tour="japan">Select Tour</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="booking-form-section">
+        <div class="container">
+          <div class="content">
+            <h2>Complete Your Booking</h2>
+            <p>Fill in your details to secure your spot</p>
+
+            <form id="bookingForm" class="booking-form">
+              <div class="form-group">
+                <label for="tourName">Selected Tour</label>
+                <input type="text" id="tourName" name="tourName" readonly placeholder="Tour Name" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required placeholder="Your First Name" />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required placeholder="Your Last Name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email Address" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tourDate">Tour Date</label>
+                  <input type="date" id="tourDate" name="tourDate" required />
+                </div>
+                <div class="form-group">
+                  <label for="participants">Participants</label>
+                  <select id="participants" name="participants" required >
+                    <option value="">Select</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5+">5+ People</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="specialRequests">Special Requests</label>
+                <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Your Special Requests (if any)"></textarea>
+              </div>
+
+              <button type="submit" class="btn primary-btn">Complete Booking</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="tour-details-section">
+        <div class="container">
+          <div class="content">
+            <h2>Tour Details</h2>
+            <p>Everything you need to know about your selected tour</p>
+
+            <div class="details-container">
+              <div class="details-tabs">
+                <button class="tab-btn active" data-tab="itinerary">Itinerary</button>
+                <button class="tab-btn" data-tab="inclusions">Inclusions</button>
+                <button class="tab-btn" data-tab="requirements">Requirements</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+              </div>
+
+              <div class="details-content">
+                <div class="tab-pane active" id="itinerary">
+                  <h3>Tour Itinerary</h3>
+                  <div class="itinerary-day">
+                    <h4>Day 1: Arrival and Orientation</h4>
+                    <p>Meet your guide and group for a welcome dinner and orientation session.</p>
+                  </div>
+                  <div class="itinerary-day">
+                    <h4>Day 2: Main Attractions</h4>
+                    <p>Full day of visiting the most famous landmarks with expert commentary.</p>
+                  </div>
+                  <div class="itinerary-day">
+                    <h4>Day 3: Local Experiences</h4>
+                    <p>Authentic cultural experiences and hidden gems known only to locals.</p>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="inclusions">
+                  <h3>What's Included</h3>
+                  <ul>
+                    <li><i class="fas fa-check"></i> Professional tour guide</li>
+                    <li><i class="fas fa-check"></i> All entrance fees</li>
+                    <li><i class="fas fa-check"></i> Accommodation (selected tours)</li>
+                    <li><i class="fas fa-check"></i> Transportation during tour</li>
+                    <li><i class="fas fa-check"></i> Some meals as indicated</li>
+                  </ul>
+                </div>
+
+                <div class="tab-pane" id="requirements">
+                  <h3>Requirements</h3>
+                  <ul>
+                    <li><i class="fas fa-info-circle"></i> Moderate physical fitness level</li>
+                    <li><i class="fas fa-info-circle"></i> Valid passport (for international tours)</li>
+                    <li><i class="fas fa-info-circle"></i> Travel insurance recommended</li>
+                    <li><i class="fas fa-info-circle"></i> Vaccinations may be required</li>
+                  </ul>
+                </div>
+
+                <div class="tab-pane" id="reviews">
+                  <h3>Customer Reviews</h3>
+                  <div class="review">
+                    <div class="review-header">
+                      <span class="review-author">Sarah J.</span>
+                      <span class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </span>
+                    </div>
+                    <p class="review-text">"This was the most amazing tour experience I've ever had. Our guide was knowledgeable and made the trip unforgettable!"</p>
+                  </div>
+                  <div class="review">
+                    <div class="review-header">
+                      <span class="review-author">Michael T.</span>
+                      <span class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </span>
+                    </div>
+                    <p class="review-text">"Excellent organization and attention to detail. Would definitely book with Booking again."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <h5>quick links:</h5>
+        <ul>
+          <li>
+            <a href="about.html"><i class="fa-solid fa-circle-check"></i>about us</a>
+          </li>
+          <li>
+            <a href="flight.html"><i class="fa-solid fa-circle-check"></i> flight</a>
+          </li>
+          <li>
+            <a href="faq.html"><i class="fa-solid fa-circle-check"></i> faq</a>
+          </li>
+          <li>
+            <a href="tel:+666 888 0000"><i class="fa-solid fa-circle-check"></i> 666 888 0000</a>
+          </li>
+          <li>
+            <a href="contact-us.html"><i class="fa-solid fa-circle-check"></i>contact us</a>
+          </li>
+          <li>
+            <a href="hotel.html"><i class="fa-solid fa-circle-check"></i> hotels</a>
+          </li>
+          <li>
+            <a href="terms.html"><i class="fa-solid fa-circle-check"></i>terms & use</a>
+          </li>
+          <li>
+            <a href="mailto:needhelp@gmail.com"><i class="fa-solid fa-circle-check"></i> needhelp@gmail.com</a>
+          </li>
+          <li>
+            <a href="history.html"><i class="fa-solid fa-circle-check"></i>our history</a>
+          </li>
+          <li>
+            <a href="car.html"><i class="fa-solid fa-circle-check"></i> car</a>
+          </li>
+          <li>
+            <a href="awards.html"><i class="fa-solid fa-circle-check"></i> our awards</a>
+          </li>
+        </ul>
+        <div class="footer-imgs">
+          <img loading="lazy" src="../images/flight/top destinations/5.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/8.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/2.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/1.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <span>made by Ahmed Ragab &copy; 2025.</span>
+      </div>
+    </footer>
+
+    <script>
+      // Tour selection functionality
+      document.querySelectorAll(".select-tour").forEach((button) => {
+        button.addEventListener("click", function () {
+          const tourName = this.parentElement.querySelector("h3").textContent;
+          document.getElementById("tourName").value = tourName;
+
+          // Scroll to booking form
+          document.querySelector(".booking-form-section").scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Tab functionality
+      document.querySelectorAll(".tab-btn").forEach((button) => {
+        button.addEventListener("click", function () {
+          const tabId = this.getAttribute("data-tab");
+
+          // Remove active class from all buttons and panes
+          document.querySelectorAll(".tab-btn").forEach((btn) => btn.classList.remove("active"));
+          document.querySelectorAll(".tab-pane").forEach((pane) => pane.classList.remove("active"));
+
+          // Add active class to clicked button and corresponding pane
+          this.classList.add("active");
+          document.getElementById(tabId).classList.add("active");
+        });
+      });
+
+      // Form submission
+      document.getElementById("bookingForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you for your booking! We will contact you shortly to confirm your tour.");
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

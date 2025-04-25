@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "location": ["Miami", "New York", "Los Angeles", "Chicago", "Las Vegas", "Orlando"],
+    "checkIn": "2023-06-12",
+    "checkOut": "2023-06-16",
+    "adults": 2,
+    "rooms": 1,
+    "totalResults": 186,
+    "page": 1,
+    "perPage": 12
+  },
+  "results": [
+    {
+      "id": "hotel-001",
+      "name": "The Fontainebleau",
+      "location": "Miami Beach, FL",
+      "rating": 4.7,
+      "price": 389,
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa"
+    },
+    {
+      "id": "hotel-002",
+      "name": "The Plaza Hotel",
+      "location": "New York, NY",
+      "rating": 4.9,
+      "price": 695,
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+    },
+    {
+      "id": "hotel-003",
+      "name": "The Beverly Hills Hotel",
+      "location": "Los Angeles, CA",
+      "rating": 4.8,
+      "price": 795,
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"
+    },
+    {
+      "id": "hotel-004",
+      "name": "The Peninsula Chicago",
+      "location": "Chicago, IL",
+      "rating": 4.8,
+      "price": 425,
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+    },
+    {
+      "id": "hotel-005",
+      "name": "Bellagio Resort",
+      "location": "Las Vegas, NV",
+      "rating": 4.6,
+      "price": 329,
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+    },
+    {
+      "id": "hotel-006",
+      "name": "Waldorf Astoria Orlando",
+      "location": "Orlando, FL",
+      "rating": 4.7,
+      "price": 459,
+      "image": "https://images.unsplash.com/photo-1444201983204-c43cbd584d93"
+    },
+    {
+      "id": "hotel-007",
+      "name": "The Standard High Line",
+      "location": "New York, NY",
+      "rating": 4.4,
+      "price": 375,
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6"
+    },
+    {
+      "id": "hotel-008",
+      "name": "The London West Hollywood",
+      "location": "Los Angeles, CA",
+      "rating": 4.5,
+      "price": 425,
+      "image": "https://images.unsplash.com/photo-1505692952047-1a78307da8f2"
+    },
+    {
+      "id": "hotel-009",
+      "name": "The Gwen Luxury Hotel",
+      "location": "Chicago, IL",
+      "rating": 4.6,
+      "price": 289,
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+    },
+    {
+      "id": "hotel-010",
+      "name": "Wynn Las Vegas",
+      "location": "Las Vegas, NV",
+      "rating": 4.9,
+      "price": 499,
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"
+    },
+    {
+      "id": "hotel-011",
+      "name": "Four Seasons Orlando",
+      "location": "Orlando, FL",
+      "rating": 4.8,
+      "price": 699,
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6"
+    },
+    {
+      "id": "hotel-012",
+      "name": "1 Hotel South Beach",
+      "location": "Miami Beach, FL",
+      "rating": 4.7,
+      "price": 525,
+      "image": "https://images.unsplash.com/photo-1505692952047-1a78307da8f2"
+    }
+  ]
+}

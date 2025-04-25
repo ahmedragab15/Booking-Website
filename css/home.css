@@ -59,6 +59,13 @@
   background-color: var(--light-main-color);
 }
 
+.search-inputs{
+  display: none;
+}
+.search-inputs:first-of-type{
+  display: block;
+}
+
 .search-inputs input {
   min-width: 280px;
   padding: 17px 10px;
@@ -73,6 +80,9 @@
   field-sizing: content;
 }
 
+.search-inputs input[type="date"] {
+opacity: 0.5;
+}
 .search-inputs input:focus {
   background: #fff;
 }

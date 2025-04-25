@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "locations": ["Miami", "New York", "Los Angeles", "Chicago", "Las Vegas", "Orlando"],
+    "pickupDate": "2023-06-12",
+    "dropoffDate": "2023-06-16",
+    "totalResults": 84,
+    "page": 1,
+    "perPage": 12
+  },
+  "results": [
+    {
+      "id": "car-001",
+      "model": "Tesla Model 3",
+      "location": "Miami International Airport",
+      "price": 119,
+      "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+    },
+    {
+      "id": "car-002",
+      "model": "Chevrolet Suburban",
+      "location": "JFK Airport, NY",
+      "price": 159,
+      "image": "https://images.unsplash.com/photo-1547038577-da80abbc4f19"
+    },
+    {
+      "id": "car-003",
+      "model": "Ford Mustang Convertible",
+      "location": "LAX Airport, CA",
+      "price": 139,
+      "image": "https://images.unsplash.com/photo-1494976388901-8329f0b6d1b1"
+    },
+    {
+      "id": "car-004",
+      "model": "Jeep Wrangler",
+      "location": "O'Hare Airport, IL",
+      "price": 129,
+      "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc"
+    },
+    {
+      "id": "car-005",
+      "model": "Cadillac Escalade",
+      "location": "McCarran Airport, NV",
+      "price": 199,
+      "image": "https://images.unsplash.com/photo-1616788494707-ec28f08d05a1"
+    },
+    {
+      "id": "car-006",
+      "model": "Toyota Camry",
+      "location": "Orlando International Airport",
+      "price": 79,
+      "image": "https://images.unsplash.com/photo-1494976388901-8329f0b6d1b1"
+    },
+    {
+      "id": "car-007",
+      "model": "Mercedes-Benz E-Class",
+      "location": "Newark Airport, NJ",
+      "price": 149,
+      "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e"
+    },
+    {
+      "id": "car-008",
+      "model": "Porsche 911",
+      "location": "Burbank Airport, CA",
+      "price": 349,
+      "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888"
+    },
+    {
+      "id": "car-009",
+      "model": "Honda Odyssey",
+      "location": "Midway Airport, IL",
+      "price": 109,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8"
+    },
+    {
+      "id": "car-010",
+      "model": "Ford F-150",
+      "location": "Las Vegas Strip",
+      "price": 129,
+      "image": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2"
+    },
+    {
+      "id": "car-011",
+      "model": "Toyota RAV4",
+      "location": "Disney World, FL",
+      "price": 89,
+      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7"
+    },
+    {
+      "id": "car-012",
+      "model": "Chrysler 300",
+      "location": "South Beach, FL",
+      "price": 99,
+      "image": "https://images.unsplash.com/photo-1555626906-fcf10d6851b4"
+    }
+  ]
+}

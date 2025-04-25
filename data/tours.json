@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "locations": ["Miami", "New York", "Los Angeles", "Chicago", "Las Vegas", "Orlando"],
+    "dateRange": "2023-06-12 to 2023-06-16",
+    "totalResults": 132,
+    "page": 1,
+    "perPage": 12
+  },
+  "results": [
+    {
+      "id": "tour-001",
+      "name": "Everglades Airboat Adventure",
+      "location": "Miami, FL",
+      "price": 59,
+      "image": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25"
+    },
+    {
+      "id": "tour-002",
+      "name": "Statue of Liberty Cruise",
+      "location": "New York, NY",
+      "price": 49,
+      "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+    },
+    {
+      "id": "tour-003",
+      "name": "Hollywood Celebrity Homes Tour",
+      "location": "Los Angeles, CA",
+      "price": 69,
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5"
+    },
+    {
+      "id": "tour-004",
+      "name": "Chicago Architecture River Cruise",
+      "location": "Chicago, IL",
+      "price": 59,
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa"
+    },
+    {
+      "id": "tour-005",
+      "name": "Grand Canyon Helicopter Tour",
+      "location": "Las Vegas, NV",
+      "price": 299,
+      "image": "https://images.unsplash.com/photo-1556388158-158ea5ccacbd"
+    },
+    {
+      "id": "tour-006",
+      "name": "Disney World Park Hopper",
+      "location": "Orlando, FL",
+      "price": 199,
+      "image": "https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81"
+    },
+    {
+      "id": "tour-007",
+      "name": "Broadway Show Tickets",
+      "location": "New York, NY",
+      "price": 129,
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5"
+    },
+    {
+      "id": "tour-008",
+      "name": "Universal Studios VIP Experience",
+      "location": "Los Angeles, CA",
+      "price": 349,
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5"
+    },
+    {
+      "id": "tour-009",
+      "name": "Gangster Tour of Chicago",
+      "location": "Chicago, IL",
+      "price": 45,
+      "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3"
+    },
+    {
+      "id": "tour-010",
+      "name": "Cirque du Soleil 'O' Show",
+      "location": "Las Vegas, NV",
+      "price": 149,
+      "image": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25"
+    },
+    {
+      "id": "tour-011",
+      "name": "Kennedy Space Center Tour",
+      "location": "Orlando, FL",
+      "price": 89,
+      "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a"
+    },
+    {
+      "id": "tour-012",
+      "name": "Wynwood Street Art Tour",
+      "location": "Miami, FL",
+      "price": 45,
+      "image": "https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81"
+    }
+  ]
+}

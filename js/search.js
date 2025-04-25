@@ -1,3 +1,4 @@
+//? Main Search Page
 let sliderContainer = document.querySelectorAll(".range-slider")
 
 sliderContainer.forEach(container => {
@@ -20,6 +21,22 @@ let progress = container.querySelector(".progress")
     customSlider(); 
 });
 
+//? Hotel Search Page
+const searchHotel = () => {
+    window.location.href = "search-hotel.html"
+}
 
+//? Flight Search Page
+const searchFlight = () => {
+    window.location.href = "search-flight.html"
+}
 
+//? Tour Search Page
+const searchTour = () => {
+    window.location.href = "search-tour.html"
+}
 
+//? Car Search Page
+const searchCar = () => {
+    window.location.href = "search-car.html"
+}

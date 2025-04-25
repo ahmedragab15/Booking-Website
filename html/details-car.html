@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frequently Asked Questions</title>
+    <title>Premium Sedan Rental</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../images/logo_icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/faq.css" />
+    <link rel="stylesheet" href="../css/details-pages.css" />
     <script defer src="../js/main.js"></script>
-    <script defer src="../js/faq.js"></script>
   </head>
   <body>
     <header>
@@ -67,63 +66,100 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="content">
-        <h2>Frequently Asked Questions</h2>
+    <main class="container">
+      <div class="car-header">
+        <h1>2023 Mercedes-Benz E-Class</h1>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span>4.9 (87 reviews)</span>
+        </div>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Miami International Airport</p>
+      </div>
 
-        <div class="faq-container">
-          <div class="faq-item">
-            <div class="faq-question">
-              <span>How do I book an experience?</span>
-              <i class="fas fa-chevron-down"></i>
+      <div class="car-gallery">
+        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="Car exterior" class="car-image" />
+        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d" alt="Car interior" class="car-image" />
+        <img src="https://images.unsplash.com/photo-1616789916437-bbf724d10dae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Car dashboard" class="car-image" />
+      </div>
+
+      <div class="details-container">
+        <div class="details-content">
+          <section class="description">
+            <h2>Vehicle Description</h2>
+            <p>Experience luxury travel with the 2023 Mercedes-Benz E-Class. This premium sedan combines elegant styling with advanced technology and exceptional comfort. Perfect for business trips or exploring in style.</p>
+          </section>
+
+          <section class="specs">
+            <h2>Specifications</h2>
+            <div class="specs-grid">
+              <div class="spec"><i class="fas fa-car"></i> Type: Luxury Sedan</div>
+              <div class="spec"><i class="fas fa-chair"></i> Seats: 5</div>
+              <div class="spec"><i class="fas fa-suitcase"></i> Bags: 2 Large</div>
+              <div class="spec"><i class="fas fa-gas-pump"></i> Fuel: Premium</div>
+              <div class="spec"><i class="fas fa-tachometer-alt"></i> MPG: 24 City / 32 Hwy</div>
+              <div class="spec"><i class="fas fa-cog"></i> Transmission: Automatic</div>
             </div>
-            <div class="faq-answer">
-              <p>Booking is simple! Just browse our experiences, select your desired date and options, and proceed to checkout. You'll receive a confirmation email with all the details.</p>
+          </section>
+
+          <section class="features">
+            <h2>Features</h2>
+            <div class="features-grid">
+              <div class="feature"><i class="fas fa-check"></i> Bluetooth</div>
+              <div class="feature"><i class="fas fa-check"></i> Navigation</div>
+              <div class="feature"><i class="fas fa-check"></i> Backup Camera</div>
+              <div class="feature"><i class="fas fa-check"></i> Heated Seats</div>
+              <div class="feature"><i class="fas fa-check"></i> Sunroof</div>
+              <div class="feature"><i class="fas fa-check"></i> Apple CarPlay</div>
+            </div>
+          </section>
+        </div>
+
+        <div class="booking-card">
+          <h3>Rental Details</h3>
+          <div class="date-selection">
+            <div class="date-input">
+              <label>Pick-up Date</label>
+              <input type="date" id="pickup-date" />
+            </div>
+            <div class="date-input">
+              <label>Drop-off Date</label>
+              <input type="date" id="dropoff-date" />
             </div>
           </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <span>What is your cancellation policy?</span>
-              <i class="fas fa-chevron-down"></i>
+          <div class="location-selection">
+            <label>Pick-up Location</label>
+            <select id="pickup-location">
+              <option>Miami International Airport</option>
+              <option>Downtown Miami</option>
+              <option>Miami Beach</option>
+            </select>
+          </div>
+          <div class="price-summary">
+            <div class="price-row">
+              <span>$129 x 3 days</span>
+              <span>$387</span>
             </div>
-            <div class="faq-answer">
-              <p>Most experiences can be cancelled for free up to 24 hours before the scheduled time. Some special experiences may have different policies which will be clearly stated during booking.</p>
+            <div class="price-row">
+              <span>Insurance</span>
+              <span>$45</span>
+            </div>
+            <div class="price-row">
+              <span>Taxes & Fees</span>
+              <span>$58.32</span>
+            </div>
+            <div class="price-row total">
+              <span>Total</span>
+              <span>$490.32</span>
             </div>
           </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <span>Do you offer group discounts?</span>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-              <p>Yes! For groups of 6 or more, we offer special discounted rates. Contact our customer service team for more information and to arrange your group booking.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <span>How do I contact customer support?</span>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-              <p>Our customer support team is available 24/7 via email at needhelp@gmail.com or by phone at 666 888 0000. You can also use the chat feature in our app.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <span>What payment methods do you accept?</span>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-              <p>We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay. Some regional payment methods may also be available.</p>
-            </div>
-          </div>
+          <button class="btn primary-btn">Book This Car</button>
         </div>
       </div>
-    </section>
+    </main>
 
     <footer>
       <div class="top-footer">

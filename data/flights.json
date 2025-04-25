@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "routes": [
+      { "origin": "MIA", "destination": "JFK" },
+      { "origin": "LAX", "destination": "ORD" },
+      { "origin": "LAS", "destination": "MCO" },
+      { "origin": "JFK", "destination": "LAX" },
+      { "origin": "ORD", "destination": "MIA" }
+    ],
+    "departureDate": "2023-06-12",
+    "returnDate": "2023-06-16",
+    "totalResults": 120,
+    "page": 1,
+    "perPage": 12
+  },
+  "results": [
+    {
+      "id": "flight-001",
+      "route": "MIA → JFK",
+      "airline": "Delta",
+      "price": 247,
+      "logo": "https://logo.clearbit.com/delta.com"
+    },
+    {
+      "id": "flight-002",
+      "route": "LAX → ORD",
+      "airline": "United",
+      "price": 289,
+      "logo": "https://logo.clearbit.com/united.com"
+    },
+    {
+      "id": "flight-003",
+      "route": "LAS → MCO",
+      "airline": "Spirit",
+      "price": 159,
+      "logo": "https://logo.clearbit.com/spirit.com"
+    },
+    {
+      "id": "flight-004",
+      "route": "JFK → LAX",
+      "airline": "American",
+      "price": 329,
+      "logo": "https://logo.clearbit.com/aa.com"
+    },
+    {
+      "id": "flight-005",
+      "route": "ORD → MIA",
+      "airline": "Frontier",
+      "price": 139,
+      "logo": "https://logo.clearbit.com/flyfrontier.com"
+    },
+    {
+      "id": "flight-006",
+      "route": "MIA → JFK",
+      "airline": "JetBlue",
+      "price": 199,
+      "logo": "https://logo.clearbit.com/jetblue.com"
+    },
+    {
+      "id": "flight-007",
+      "route": "LAX → ORD",
+      "airline": "Alaska",
+      "price": 275,
+      "logo": "https://logo.clearbit.com/alaskaair.com"
+    },
+    {
+      "id": "flight-008",
+      "route": "LAS → MCO",
+      "airline": "Southwest",
+      "price": 169,
+      "logo": "https://logo.clearbit.com/southwest.com"
+    },
+    {
+      "id": "flight-009",
+      "route": "JFK → LAX",
+      "airline": "Delta",
+      "price": 349,
+      "logo": "https://logo.clearbit.com/delta.com"
+    },
+    {
+      "id": "flight-010",
+      "route": "ORD → MIA",
+      "airline": "American",
+      "price": 229,
+      "logo": "https://logo.clearbit.com/aa.com"
+    },
+    {
+      "id": "flight-011",
+      "route": "MIA → JFK",
+      "airline": "United",
+      "price": 269,
+      "logo": "https://logo.clearbit.com/united.com"
+    },
+    {
+      "id": "flight-012",
+      "route": "LAX → ORD",
+      "airline": "Spirit",
+      "price": 189,
+      "logo": "https://logo.clearbit.com/spirit.com"
+    }
+  ]
+}

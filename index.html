@@ -63,19 +63,36 @@
     </section>
     <section class="search-section">
         <div class="container">
-            <ul>
+            <ul class="search-tabs">
                 <li class="selected"><i class="fa-solid fa-hotel"></i> hotel</li>
                 <li><i class="fa-solid fa-plane fa-rotate-270"></i> flight</li>
                 <li><i class="fa-solid fa-earth-americas"></i> tour</li>
                 <li><i class="fa-solid fa-car"></i> car</li>
             </ul>
-            <div class="search-inputs">
-                <input type="text" placeholder=" &#xf500  2 adults 4 child 2 rooms">
-                <input type="text" placeholder=" &#xf073  select check-in date">
-                <input type="text" placeholder=" &#xf073  select check-out date">
-                <input type="text" placeholder=" &#xf14e  destination">
+            <div class="search-inputs" data-tab="hotel">
+            <input type="date" placeholder=" &#xf073  check in">
+            <input type="date" placeholder=" &#xf073  check out">
+            <input type="text" placeholder=" &#xf236  guest and rooms">
             </div>
-            <button class="btn primary-btn">search <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="search-inputs" data-tab="flight">
+            <input type="text" placeholder=" &#xf5b0 Cairo (CAI)">
+            <input type="text" placeholder=" &#xf5af Country , City , airport">
+            <input type="date" placeholder=" &#xf073 add date">
+            <input type="text" placeholder=" &#xf406 1 adult, economy">
+            </div>
+            <div class="search-inputs" data-tab="tour">
+            <input type="text" placeholder=" &#xf500 2 adults 4 child 2 rooms">
+            <input type="date" placeholder=" &#xf073 select check-in date">
+            <input type="date" placeholder=" &#xf073 select check-out date">
+            <input type="text" placeholder=" &#xf14e destination">
+            </div>
+            <div class="search-inputs" data-tab="car">
+            <input type="text" placeholder=" &#xf1b9 pick up location">
+            <input type="text" placeholder=" &#xf1b9 drop off location">
+            <input type="date" placeholder=" &#xf073 pick up date">
+            <input type="date" placeholder=" &#xf073 drop off date">
+            </div>
+            <button class="btn primary-btn" id="searchBtn">search <i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </section>
     <section class="destintions-section">

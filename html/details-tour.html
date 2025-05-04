@@ -1,227 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Adventure Tour</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../images/logo_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/details-pages.css" />
+    <script defer src="../js/main.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amazon Adventure Tour</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="../images/logo_icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="../css/main.css" />
-  <link rel="stylesheet" href="../css/details-pages.css">
-  <script defer src="../js/main.js"></script>
-</head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="../index.html"><img loading="lazy" class="logo" src="../images/logo.png" alt="logo image" /></a>
+          <ul>
+            <li>
+              <a href="hotel.html"><i class="fa-solid fa-hotel"></i> hotel</a>
+            </li>
+            <li>
+              <a href="flight.html"><i class="fa-solid fa-plane fa-rotate-270"></i> flight</a>
+            </li>
+            <li>
+              <a href="tour.html"><i class="fa-solid fa-earth-americas"></i> tour</a>
+            </li>
+            <li>
+              <a href="car.html"><i class="fa-solid fa-car"></i> car</a>
+            </li>
+          </ul>
+          <a class="signbtns" href="sign.html">
+            <div>
+              <button class="btn">log in /</button>
+              <button class="btn">sign up</button>
+            </div>
+          </a>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+        <div class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="hotel.html"><i class="fa-solid fa-hotel"></i> hotel</a>
+            </li>
+            <li>
+              <a href="flight.html"><i class="fa-solid fa-plane fa-rotate-270"></i> flight</a>
+            </li>
+            <li>
+              <a href="tour.html"><i class="fa-solid fa-earth-americas"></i> tour</a>
+            </li>
+            <li>
+              <a href="car.html"><i class="fa-solid fa-car"></i> car</a>
+            </li>
+          </ul>
+          <a class="signbtns" href="sign.html">
+            <div>
+              <button class="btn">log in /</button>
+              <button class="btn">sign up</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <a href="../index.html"><img loading="lazy" class="logo" src="../images/logo.png" alt="logo image" /></a>
+    <main class="container" id="hero">
+      <div class="tour-header">
+        <h1>Amazon Rainforest Adventure</h1>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.7 (312 reviews)</span>
+        </div>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Manaus, Brazil</p>
+      </div>
+
+      <div class="tour-gallery">
+        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25" alt="Amazon river" class="tour-image" />
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5" alt="Rainforest canopy" class="tour-image" />
+        <img src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81" alt="Wildlife" class="tour-image" />
+      </div>
+
+      <div class="details-container">
+        <div class="details-content">
+          <section class="description">
+            <h2>Tour Description</h2>
+            <p>Embark on an unforgettable 5-day adventure through the heart of the Amazon rainforest. This small-group tour takes you deep into the jungle with expert naturalist guides, where you'll encounter exotic wildlife, learn about indigenous cultures, and experience the breathtaking biodiversity of the world's largest rainforest.</p>
+          </section>
+
+          <section class="highlights">
+            <h2>Tour Highlights</h2>
+            <ul class="highlight-list">
+              <li><i class="fas fa-check"></i> Canoe through flooded forests and spot pink river dolphins</li>
+              <li><i class="fas fa-check"></i> Night jungle walk to discover nocturnal creatures</li>
+              <li><i class="fas fa-check"></i> Visit a local indigenous community</li>
+              <li><i class="fas fa-check"></i> Piranha fishing expedition</li>
+              <li><i class="fas fa-check"></i> Sunrise birdwatching tour</li>
+            </ul>
+          </section>
+
+          <section class="itinerary">
+            <h2>Detailed Itinerary</h2>
+            <div class="itinerary-day">
+              <h3>Day 1: Arrival in Manaus</h3>
+              <p>Arrive in Manaus and transfer to our eco-lodge. Evening orientation and welcome dinner.</p>
+            </div>
+            <div class="itinerary-day">
+              <h3>Day 2: Amazon River Exploration</h3>
+              <p>Boat tour along the Amazon River, visit the Meeting of Waters, and afternoon jungle hike.</p>
+            </div>
+            <!-- More itinerary days -->
+          </section>
+
+          <section class="included">
+            <h2>What's Included</h2>
+            <ul class="included-list">
+              <li><i class="fas fa-check"></i> 4 nights accommodation</li>
+              <li><i class="fas fa-check"></i> All meals (breakfast, lunch, dinner)</li>
+              <li><i class="fas fa-check"></i> Expert bilingual guide</li>
+              <li><i class="fas fa-check"></i> All activities mentioned</li>
+              <li><i class="fas fa-check"></i> Airport transfers</li>
+              <li><i class="fas fa-check"></i> Drinking water</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="booking-card">
+          <h3>Book This Tour</h3>
+          <div class="price-display">$1,299 per person</div>
+          <div class="date-selection">
+            <label>Tour Date</label>
+            <input type="date" id="tour-date" />
+          </div>
+          <div class="guest-selection">
+            <label>Participants</label>
+            <select id="participants">
+              <option>1 Adult</option>
+              <option>2 Adults</option>
+              <option>3 Adults</option>
+              <option>4 Adults</option>
+            </select>
+          </div>
+          <div class="price-summary">
+            <div class="price-row">
+              <span>$1,299 x 2 persons</span>
+              <span>$2,598</span>
+            </div>
+            <div class="price-row">
+              <span>Taxes & Fees</span>
+              <span>$259.80</span>
+            </div>
+            <div class="price-row total">
+              <span>Total</span>
+              <span>$2,857.80</span>
+            </div>
+          </div>
+          <button class="btn primary-btn">Book Now</button>
+          <p class="small-text">Free cancellation up to 30 days before tour</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="top-footer">
+        <h5>quick links:</h5>
         <ul>
           <li>
-            <a href="hotel.html"><i class="fa-solid fa-hotel"></i> hotel</a>
+            <a href="about.html"><i class="fa-solid fa-circle-check"></i>about us</a>
           </li>
           <li>
-            <a href="flight.html"><i class="fa-solid fa-plane fa-rotate-270"></i> flight</a>
+            <a href="flight.html"><i class="fa-solid fa-circle-check"></i> flight</a>
           </li>
           <li>
-            <a href="tour.html"><i class="fa-solid fa-earth-americas"></i> tour</a>
+            <a href="faq.html"><i class="fa-solid fa-circle-check"></i> faq</a>
           </li>
           <li>
-            <a href="car.html"><i class="fa-solid fa-car"></i> car</a>
+            <a href="tel:+666 888 0000"><i class="fa-solid fa-circle-check"></i> 666 888 0000</a>
+          </li>
+          <li>
+            <a href="contact-us.html"><i class="fa-solid fa-circle-check"></i>contact us</a>
+          </li>
+          <li>
+            <a href="hotel.html"><i class="fa-solid fa-circle-check"></i> hotels</a>
+          </li>
+          <li>
+            <a href="terms.html"><i class="fa-solid fa-circle-check"></i>terms & use</a>
+          </li>
+          <li>
+            <a href="mailto:needhelp@gmail.com"><i class="fa-solid fa-circle-check"></i> needhelp@gmail.com</a>
+          </li>
+          <li>
+            <a href="history.html"><i class="fa-solid fa-circle-check"></i>our history</a>
+          </li>
+          <li>
+            <a href="car.html"><i class="fa-solid fa-circle-check"></i> car</a>
+          </li>
+          <li>
+            <a href="awards.html"><i class="fa-solid fa-circle-check"></i> our awards</a>
           </li>
         </ul>
-        <a class="signbtns" href="sign.html">
-          <div>
-            <button class="btn">log in /</button>
-            <button class="btn">sign up</button>
-          </div>
-        </a>
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="footer-imgs">
+          <img loading="lazy" src="../images/flight/top destinations/5.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/8.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/2.jpg" alt="image" />
+          <img loading="lazy" src="../images/flight/top destinations/1.jpg" alt="image" />
         </div>
-      </nav>
-      <div class="sidebar-nav">
-        <ul>
-          <li>
-            <a href="hotel.html"><i class="fa-solid fa-hotel"></i> hotel</a>
-          </li>
-          <li>
-            <a href="flight.html"><i class="fa-solid fa-plane fa-rotate-270"></i> flight</a>
-          </li>
-          <li>
-            <a href="tour.html"><i class="fa-solid fa-earth-americas"></i> tour</a>
-          </li>
-          <li>
-            <a href="car.html"><i class="fa-solid fa-car"></i> car</a>
-          </li>
-        </ul>
-        <a class="signbtns" href="sign.html">
-          <div>
-            <button class="btn">log in /</button>
-            <button class="btn">sign up</button>
-          </div>
-        </a>
       </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="tour-header">
-      <h1>Amazon Rainforest Adventure</h1>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-        <span>4.7 (312 reviews)</span>
+      <div class="bottom-footer">
+        <span>made by Ahmed Ragab &copy; 2025.</span>
       </div>
-      <p class="location"><i class="fas fa-map-marker-alt"></i> Manaus, Brazil</p>
-    </div>
-
-    <div class="tour-gallery">
-      <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25" alt="Amazon river" class="tour-image">
-      <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5" alt="Rainforest canopy" class="tour-image">
-      <img src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81" alt="Wildlife" class="tour-image">
-    </div>
-
-    <div class="details-container">
-      <div class="details-content">
-        <section class="description">
-          <h2>Tour Description</h2>
-          <p>Embark on an unforgettable 5-day adventure through the heart of the Amazon rainforest. This small-group
-            tour takes you deep into the jungle with expert naturalist guides, where you'll encounter exotic wildlife,
-            learn about indigenous cultures, and experience the breathtaking biodiversity of the world's largest
-            rainforest.</p>
-        </section>
-
-        <section class="highlights">
-          <h2>Tour Highlights</h2>
-          <ul class="highlight-list">
-            <li><i class="fas fa-check"></i> Canoe through flooded forests and spot pink river dolphins</li>
-            <li><i class="fas fa-check"></i> Night jungle walk to discover nocturnal creatures</li>
-            <li><i class="fas fa-check"></i> Visit a local indigenous community</li>
-            <li><i class="fas fa-check"></i> Piranha fishing expedition</li>
-            <li><i class="fas fa-check"></i> Sunrise birdwatching tour</li>
-          </ul>
-        </section>
-
-        <section class="itinerary">
-          <h2>Detailed Itinerary</h2>
-          <div class="itinerary-day">
-            <h3>Day 1: Arrival in Manaus</h3>
-            <p>Arrive in Manaus and transfer to our eco-lodge. Evening orientation and welcome dinner.</p>
-          </div>
-          <div class="itinerary-day">
-            <h3>Day 2: Amazon River Exploration</h3>
-            <p>Boat tour along the Amazon River, visit the Meeting of Waters, and afternoon jungle hike.</p>
-          </div>
-          <!-- More itinerary days -->
-        </section>
-
-        <section class="included">
-          <h2>What's Included</h2>
-          <ul class="included-list">
-            <li><i class="fas fa-check"></i> 4 nights accommodation</li>
-            <li><i class="fas fa-check"></i> All meals (breakfast, lunch, dinner)</li>
-            <li><i class="fas fa-check"></i> Expert bilingual guide</li>
-            <li><i class="fas fa-check"></i> All activities mentioned</li>
-            <li><i class="fas fa-check"></i> Airport transfers</li>
-            <li><i class="fas fa-check"></i> Drinking water</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="booking-card">
-        <h3>Book This Tour</h3>
-        <div class="price-display">$1,299 per person</div>
-        <div class="date-selection">
-          <label>Tour Date</label>
-          <input type="date" id="tour-date">
-        </div>
-        <div class="guest-selection">
-          <label>Participants</label>
-          <select id="participants">
-            <option>1 Adult</option>
-            <option>2 Adults</option>
-            <option>3 Adults</option>
-            <option>4 Adults</option>
-          </select>
-        </div>
-        <div class="price-summary">
-          <div class="price-row">
-            <span>$1,299 x 2 persons</span>
-            <span>$2,598</span>
-          </div>
-          <div class="price-row">
-            <span>Taxes & Fees</span>
-            <span>$259.80</span>
-          </div>
-          <div class="price-row total">
-            <span>Total</span>
-            <span>$2,857.80</span>
-          </div>
-        </div>
-        <button class="btn primary-btn">Book Now</button>
-        <p class="small-text">Free cancellation up to 30 days before tour</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="top-footer">
-      <h5>quick links:</h5>
-      <ul>
-        <li>
-          <a href="about.html"><i class="fa-solid fa-circle-check"></i>about us</a>
-        </li>
-        <li>
-          <a href="flight.html"><i class="fa-solid fa-circle-check"></i> flight</a>
-        </li>
-        <li>
-          <a href="faq.html"><i class="fa-solid fa-circle-check"></i> faq</a>
-        </li>
-        <li>
-          <a href="tel:+666 888 0000"><i class="fa-solid fa-circle-check"></i> 666 888 0000</a>
-        </li>
-        <li>
-          <a href="contact-us.html"><i class="fa-solid fa-circle-check"></i>contact us</a>
-        </li>
-        <li>
-          <a href="hotel.html"><i class="fa-solid fa-circle-check"></i> hotels</a>
-        </li>
-        <li>
-          <a href="terms.html"><i class="fa-solid fa-circle-check"></i>terms & use</a>
-        </li>
-        <li>
-          <a href="mailto:needhelp@gmail.com"><i class="fa-solid fa-circle-check"></i> needhelp@gmail.com</a>
-        </li>
-        <li>
-          <a href="history.html"><i class="fa-solid fa-circle-check"></i>our history</a>
-        </li>
-        <li>
-          <a href="car.html"><i class="fa-solid fa-circle-check"></i> car</a>
-        </li>
-        <li>
-          <a href="awards.html"><i class="fa-solid fa-circle-check"></i> our awards</a>
-        </li>
-      </ul>
-      <div class="footer-imgs">
-        <img loading="lazy" src="../images/flight/top destinations/5.jpg" alt="image" />
-        <img loading="lazy" src="../images/flight/top destinations/8.jpg" alt="image" />
-        <img loading="lazy" src="../images/flight/top destinations/2.jpg" alt="image" />
-        <img loading="lazy" src="../images/flight/top destinations/1.jpg" alt="image" />
-      </div>
-    </div>
-    <div class="bottom-footer">
-      <span>made by Ahmed Ragab &copy; 2025.</span>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+    <a class="scroll-up" href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
+  </body>
 </html>

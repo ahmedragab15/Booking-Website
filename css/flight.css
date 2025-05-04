@@ -48,7 +48,7 @@
 }
 .search-flight-box {
   width: 900px;
-  max-width: 90%;
+  max-width: 100%;
   min-height: 235px;
   border-radius: 10px;
   background: #fff;
@@ -128,14 +128,14 @@
 }
 .top-destinations .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin: 0 2rem;
   gap: 3rem 2rem;
 }
 .top-destinations .cards .card {
   display: flex;
   border-radius: 15px;
   box-shadow: 1px 2px 7px 0 #0000001f, -7px -1px 7px 0 #0000001f;
-  overflow: hidden;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -216,6 +216,7 @@
   left: 29%;
   bottom: 0;
   font-weight: 900;
+  width: fit-content;
 }
 .floating-text p {
   font-size: 18rem;
@@ -230,3 +231,118 @@
   font-size: 7rem;
 }
 /**offer-section end*/
+
+@media (max-width: 1200px) {
+  .offer-section::before {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.473);
+  }
+  .offer-section * {
+    position: relative;
+    z-index: 2;
+  }
+  .floating-text {
+    left: 5%;
+  }
+  .floating-text > span {
+    left: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    background-size: 400px;
+  }
+  .hero-section::after {
+    right: 0;
+  }
+  .hero-section .content h1 {
+    font-size: 4rem;
+  }
+  .search-flight-box {
+    margin-top: 1rem;
+  }
+  .search-inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+  }
+  .top-destinations .cards {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section::after {
+    display: none;
+  }
+  .offer-section .content {
+    padding: 5rem 3rem;
+  }
+  .floating-text {
+    left: 5%;
+  }
+  .floating-text p {
+    font-size: 6rem;
+  }
+  .floating-text p span {
+    font-size: 2rem;
+  }
+  .floating-text > span {
+    bottom: 60px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section .content {
+    width: 100%;
+  }
+  .hero-section .content span {
+    font-size: 1rem;
+  }
+  .hero-section .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .search-inputs input {
+    max-width: 80%;
+  }
+  .offer-section {
+    min-height: 100px;
+    margin: 1rem 0 3rem 0;
+  }
+  .offer-section .content > span {
+    font-size: 0.8rem;
+  }
+  .offer-section .content > span img {
+    width: 25px;
+  }
+  .offer-section .content h2 {
+    font-size: 2.2rem;
+    margin: 5px 0;
+  }
+  .offer-section .content > p {
+    font-size: 0.8rem;
+  }
+  .offer-section .content button {
+    padding: 1rem 2rem;
+    border-radius: 60px;
+    margin-top: 20px;
+  }
+
+  .floating-text {
+    left: 15%;
+  }
+  .floating-text p {
+    font-size: 4rem;
+  }
+  .floating-text p span {
+    font-size: 1.5rem;
+  }
+  .floating-text > span {
+    bottom: 35px;
+    font-size: 1.5rem;
+  }
+}

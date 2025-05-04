@@ -33,6 +33,7 @@
 
 .search-section .container {
   max-width: 1500px;
+  width: 90%;
   min-height: 240px;
   text-align: center;
   box-shadow: 1px 1px 5px 0 #00000038;
@@ -59,15 +60,16 @@
   background-color: var(--light-main-color);
 }
 
-.search-inputs{
+.search-inputs {
   display: none;
 }
-.search-inputs:first-of-type{
+.search-inputs:first-of-type {
   display: block;
 }
 
 .search-inputs input {
-  min-width: 280px;
+  width: 280px;
+  max-width: 90%;
   padding: 17px 10px;
   background: #e2e1e160;
   color: #000;
@@ -81,7 +83,7 @@
 }
 
 .search-inputs input[type="date"] {
-opacity: 0.5;
+  opacity: 0.5;
 }
 .search-inputs input:focus {
   background: #fff;
@@ -271,9 +273,11 @@ opacity: 0.5;
 
 .app-ui {
   position: relative;
+  margin-right: 6rem;
 }
 
 .app-ui img:first-child {
+  max-width: 100%;
   display: block;
   position: relative;
   height: auto;
@@ -299,8 +303,13 @@ opacity: 0.5;
   bottom: -100px;
 }
 
+.aboutUs-section .bottom-sec .title {
+  width: 50%;
+}
+
 .aboutUs-section .bottom-sec h2 {
-  max-width: 650px;
+  max-width: 90%;
+  width: 650px;
   font-size: 4.2rem;
   padding-bottom: 2rem;
   font-weight: 500;
@@ -316,6 +325,7 @@ opacity: 0.5;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding-bottom: 2rem;
+  max-width: 100%;
 }
 
 .title ul i {
@@ -326,9 +336,11 @@ opacity: 0.5;
 .download-app {
   width: 100%;
   display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 .title .download-app img {
-  margin: 0 2rem;
+  max-width: 100%;
   cursor: pointer;
 }
 
@@ -503,7 +515,7 @@ opacity: 0.5;
     height: 100%;
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.692);
+    background: rgba(255, 255, 255, 0.514);
   }
   .hero-section * {
     position: relative;
@@ -563,6 +575,9 @@ opacity: 0.5;
 
 /* tablets*/
 @media (max-width: 992px) {
+  .hero-section .container {
+    padding: 10rem 4rem;
+  }
   .destintion-cards {
     grid-template-columns: 60%;
     place-content: center;
@@ -592,14 +607,73 @@ opacity: 0.5;
   .bottom-sec {
     flex-direction: column;
   }
+  .aboutUs-section .bottom-sec h2 {
+    font-size: 2.5rem;
+  }
+  .download-app {
+  flex-direction: column;
+}
+.title .download-app img {
+  width: 200px;
+}
+.slideshow-section .title {
+ flex-direction: column;
+}
 }
 
 /*big phones*/
 @media (max-width: 768px) {
+  .hero-section {
+    min-height: 70dvh;
+  }
+  .hero-section .container {
+    padding: 10rem 6rem 1rem;
+  }
+  .hero-section h1 {
+    font-size: 4rem;
+  }
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+  .search-section {
+  padding: 0;
+}
+.search-section ul {
+  flex-direction: column;
+gap: 0.5rem;
+}
+  .aboutUs-section .bottom-sec .title {
+  width: 80%;
+  margin: 0 auto;
+}
+  .aboutUs-section .bottom-sec h2 {
+font-size: 2rem;
+}
+  .bottom-sec .title p {
+    font-size: 0.9rem;
+  }
+  .title .download-app img {
+  width: 150px;
+}
+.app-ui {
+  margin-right: 0;
+}
+    .slideshow-section h2 {
+        font-size: 2rem;
+    }
+    .slideshow-section p {
+  font-size: 0.9rem;
+}
 }
 
 /* phones*/
 @media (max-width: 576px) {
+  .hero-section .container {
+    padding: 10rem 2rem 0rem;
+  }
+  .hero-section h1 {
+    font-size: 3rem;
+  }
 }
 
 /* end responsive */

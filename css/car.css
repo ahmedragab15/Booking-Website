@@ -32,9 +32,9 @@
   row-gap: 3rem;
 }
 
-.search-flight-box {
+.search-car-box {
   width: 900px;
-  max-width: 90%;
+  max-width: 100%;
   min-height: 235px;
   border-radius: 10px;
   background: #fff;
@@ -73,12 +73,12 @@
   color: #0000005b;
 }
 
-.search-flight-box button {
+.search-car-box button {
   text-transform: uppercase;
   padding: 1rem 2rem;
 }
 
-.search-flight-box button i {
+.search-car-box button i {
   margin-left: 10px;
 }
 
@@ -92,6 +92,7 @@
   font-size: var(--heading-font-size);
   font-weight: 600;
   margin: 15px 0;
+  padding: 0 1rem;
   text-align: center;
 }
 
@@ -101,6 +102,11 @@
   justify-content: space-evenly;
   gap: 2rem;
   overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.top-cars .row .card{
+  max-width: 25%;
 }
 
 .img-box img {
@@ -120,6 +126,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 2rem;
+  gap: 1rem;
 }
 
 .card .card-content h4 {
@@ -132,7 +139,7 @@
   font-size: 0.9rem;
 }
 
-.top-cars > button {
+.top-cars > button.btn {
   display: block;
   margin: 5rem auto 0;
   border-radius: 30px;
@@ -185,3 +192,54 @@
 }
 
 /** features end*/
+
+@media (max-width:992px) {
+    .search-inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+  }
+  .top-cars h2 {
+  font-size: 2.2rem;
+}
+  .top-cars .row .card{
+  max-width: 50%;
+}
+
+}
+@media (max-width:768px) {
+    .top-cars .row .card{
+  max-width: 70%;
+}
+  .card .card-content h4 {
+  font-size: 0.9rem;
+}
+
+.card .card-content span {
+  font-size: 0.8rem;
+}
+.card .card-content button {
+  font-size: 0.8rem;
+}
+.top-cars > button.btn {
+  font-size: 0.9rem;
+    border-radius: 20px;
+  padding: 1rem ;
+}
+
+}
+
+@media (max-width: 576px) {
+  .hero-section .content {
+    width: 100%;
+  }
+  .hero-section .content span {
+    font-size: 1rem;
+  }
+  .hero-section .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .search-inputs input {
+    max-width: 80%;
+  }}

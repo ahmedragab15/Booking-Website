@@ -163,7 +163,7 @@ nav li a:hover {
 /** top-footer start*/
 .top-footer {
   padding: 2rem 1rem;
-  background: url(../images/footer-bg.png) no-repeat center;
+  background: url(../images/footer-bg.png) no-repeat center/ cover;
 }
 
 .top-footer h5 {
@@ -174,7 +174,7 @@ nav li a:hover {
 
 .top-footer ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .top-footer ul li {
@@ -363,6 +363,10 @@ nav li a:hover {
   nav ul,
   nav .signbtns {
     display: none;
+  }
+  .top-footer ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 

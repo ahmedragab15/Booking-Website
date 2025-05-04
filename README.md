@@ -1,6 +1,4 @@
 # 🏨 Booking Website
-**UNFINISHED YET**
-
 
 A fully responsive and interactive **Booking Website** built using **HTML**, **CSS**, and **JavaScript**. Perfect for hotels, travel, events, or service-based platforms where users can check availability and make reservations.
 
@@ -23,3 +21,7 @@ A fully responsive and interactive **Booking Website** built using **HTML**, **C
 ## 📸 Preview
 
 ![Booking Website Screenshot](images/preview.png)
+
+## 🚀 Live Demo
+
+[🔗 View Live Demo](https://ahmedragab15.github.io/Booking-Website)
